@@ -53,6 +53,9 @@ export default function Home() {
             <a href="#faq" className="text-[#001F3F] hover:underline decoration-[#8F1024] decoration-2 underline-offset-4 transition-colors font-medium">
               FAQ
             </a>
+            <a href="/support" className="text-[#001F3F] hover:underline decoration-[#8F1024] decoration-2 underline-offset-4 transition-colors font-medium">
+              Support
+            </a>
             <a
               href="#contact"
               className="bg-[#8F1024] text-white px-6 py-2 rounded-lg hover:bg-[#740d1d] transition-colors font-medium"
@@ -70,18 +73,32 @@ export default function Home() {
         ctaText="Get Started"
       />
 
-      <div className="relative overflow-hidden border-y border-[#001F3F]/10 bg-white">
+      <section className="relative overflow-hidden border-y border-[#001F3F]/10 bg-white">
         <div className="h-3 bg-[#8F1024]" />
-        <div className="flex items-center justify-center px-4 py-6 bg-[#f4f7fb]">
-          <div className="flex w-full max-w-4xl items-center justify-center gap-4">
-            <div className="hidden sm:block h-[2px] flex-1 bg-[#001F3F]/20" />
-            <div className="mx-auto inline-flex shrink-0 rounded-sm bg-[#001F3F] px-4 py-2.5 text-center text-[11px] font-bold uppercase tracking-[0.14em] text-white sm:px-5 sm:text-xs sm:tracking-[0.18em]">
-              Built For Retail Locations
+        <div className="relative aspect-[4/3] w-full md:aspect-[16/5]">
+          <Image
+            src="/LVPVendingPokemonWide1.png"
+            alt="LVP Vending machine installed in a retail location"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#001F3F]/80 via-[#001F3F]/35 to-[#001F3F]/10" />
+          <div className="absolute inset-0 flex items-end md:items-center">
+            <div className="w-full px-4 py-6 md:px-8 md:py-10">
+              <div className="mx-auto max-w-6xl">
+                <div className="inline-flex rounded-sm bg-white px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[#001F3F] md:text-xs">
+                  Built For Retail Locations
+                </div>
+                <h2 className="mt-4 max-w-xl text-2xl font-black text-white md:text-4xl">
+                  A clean, professional presence that fits right into your store.
+                </h2>
+              </div>
             </div>
-            <div className="hidden sm:block h-[2px] flex-1 bg-[#001F3F]/20" />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Earn 10% Section */}
       <Section id="earn" title="Earn 10% of Every Sale" className="pt-18 md:pt-20 bg-[#f8fafc]">
@@ -89,7 +106,7 @@ export default function Home() {
           <div className="flex items-center justify-center md:justify-start">
             <div className="bg-lvp-gray p-6 rounded-2xl border border-lvp-navy/10 shadow-[0_10px_28px_rgba(0,31,63,0.08)]">
               <Image
-                src="/LVPVendingPokemonMachine.png"
+                src="/LVPVendingPokemonMachine1.png"
                 alt="LVP Vending Pokemon machine"
                 width={420}
                 height={420}
@@ -126,6 +143,17 @@ export default function Home() {
       {/* Why Pokémon Section */}
       <Section id="why" title="Why Pokémon Cards?" dark>
         <div className="grid md:grid-cols-2 gap-12">
+          <div className="flex items-center justify-center md:justify-start">
+            <div className="bg-white/10 p-6 rounded-2xl border border-white/20">
+              <Image
+                src="/LVPVendingPokemonMachine2.png"
+                alt="LVP Vending Pokemon machine display"
+                width={380}
+                height={380}
+                className="h-auto w-full max-w-[260px] sm:max-w-[300px]"
+              />
+            </div>
+          </div>
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
               Pokemon is one of the world's most popular collectibles. Families, collectors, and kids actively seek booster packs, making them an excellent impulse purchase at your location.
@@ -142,17 +170,6 @@ export default function Home() {
               description="Customers tap a card or mobile wallet and complete the transaction in seconds. No friction."
               dark
             />
-          </div>
-          <div className="hidden md:flex items-center justify-center">
-            <div className="bg-white/10 p-6 rounded-2xl border border-white/20">
-              <Image
-                src="/LVPVendingPokemonMachine.png"
-                alt="LVP Vending Pokemon machine display"
-                width={380}
-                height={380}
-                className="h-auto w-full max-w-[300px]"
-              />
-            </div>
           </div>
         </div>
       </Section>
@@ -208,6 +225,17 @@ export default function Home() {
       {/* Compact Design Section */}
       <Section title="Compact Wall-Mounted Design" dark>
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="flex items-center justify-center md:justify-end">
+            <div className="bg-white/10 p-6 rounded-2xl border border-white/20">
+              <Image
+                src="/LVPVendingPokemonMachine3.png"
+                alt="LVP Vending machine dimensions view"
+                width={360}
+                height={360}
+                className="h-auto w-full max-w-[240px] sm:max-w-[290px]"
+              />
+            </div>
+          </div>
           <div className="space-y-6">
             <div className="bg-white/10 p-8 rounded-lg border border-white/20">
               <div className="space-y-4">
@@ -240,17 +268,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="hidden md:flex items-center justify-center">
-            <div className="bg-white/10 p-6 rounded-2xl border border-white/20">
-              <Image
-                src="/LVPVendingPokemonMachine.png"
-                alt="LVP Vending machine dimensions view"
-                width={360}
-                height={360}
-                className="h-auto w-full max-w-[290px]"
-              />
             </div>
           </div>
         </div>
@@ -296,6 +313,12 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-sm mb-8">
             <a href="mailto:info@lvpvending.com" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
               info@lvpvending.com
+            </a>
+            <a href="/support" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
+              Support
+            </a>
+            <a href="/brand-affiliation-disclaimer" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
+              Brand Affiliation Disclaimer
             </a>
             <a href="https://www.lvpvending.com" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
               www.lvpvending.com

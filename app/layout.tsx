@@ -36,6 +36,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
+      data-scroll-behavior="smooth"
     >
       <body className="bg-white text-lvp-navy">
         {children}

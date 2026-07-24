@@ -5,7 +5,7 @@ const body = [
   '',
   'Business name:',
   'Location:',
-  'Best contact email:',
+  'Best contact:',
   '',
   'Questions / notes:',
   '',
@@ -23,7 +23,7 @@ export default function ContactForm() {
 
       <a
         href={mailtoHref}
-        className="inline-flex w-full items-center justify-center bg-[#8F1024] text-white py-3 rounded-lg font-bold uppercase tracking-wide hover:bg-[#740d1d] transition-colors"
+        className="inline-flex w-full items-center justify-center rounded-lg bg-[#8F1024] px-4 py-3 text-xs font-bold uppercase tracking-wide text-white whitespace-nowrap hover:bg-[#740d1d] transition-colors sm:px-6 sm:text-sm md:text-base"
       >
         Start the Conversation
       </a>
