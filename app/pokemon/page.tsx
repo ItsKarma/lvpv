@@ -20,7 +20,7 @@ const faqItems = [
   },
   {
     question: 'How much space does the machine take up?',
-    answer: 'The LVP vending machine is compact at 23.6"W × 40.5"H × 10.2"D, fitting perfectly in retail spaces, grocery stores, and convenience stores.',
+    answer: 'The LVP vending machine is compact at 24"W × 42.5"H × 11"D, fitting perfectly in retail spaces, grocery stores, and convenience stores.',
   },
   {
     question: 'Does the machine have to be mounted to a wall?',
@@ -218,7 +218,7 @@ export default function PokemonPage() {
                   <span className="text-lvp-red text-2xl font-bold">✓</span>
                   <div>
                     <p className="font-semibold">Dimensions</p>
-                    <p className="text-white">23.6"W × 40.5"H × 10.2"D</p>
+                    <p className="text-white">24"W × 42.5"H × 11"D</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
