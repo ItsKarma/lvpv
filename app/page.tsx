@@ -2,6 +2,7 @@
 
 import { CreditCard, DollarSign, Sparkles } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
 import ContactForm from '@/components/ContactForm';
@@ -31,43 +32,71 @@ export default function Home() {
       {/* Machine Showcase */}
       <section className="bg-white px-4 pb-12 pt-2 md:pb-16 md:pt-4">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_10px_28px_rgba(0,31,63,0.08)]">
+          <Link
+            href="/smart-vending"
+            className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_10px_28px_rgba(0,31,63,0.08)]"
+          >
             <Image
               src="/LVPVendingSmartProDemo1.jpg"
               alt="LVP Smart Pro vending machine"
               fill
               priority
               sizes="(min-width: 768px) 25vw, 50vw"
-              className="object-cover"
+              className="object-cover transition-transform group-hover:scale-105"
             />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_10px_28px_rgba(0,31,63,0.08)]">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#001F3F]/70 via-transparent to-transparent" />
+            <span className="absolute bottom-2 left-2 right-2 text-xs font-bold uppercase tracking-[0.08em] text-white md:text-sm">
+              Smart Vending
+            </span>
+          </Link>
+          <Link
+            href="/pokemon"
+            className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_10px_28px_rgba(0,31,63,0.08)]"
+          >
             <Image
               src="/LVPVendingPokemonMachine1.png"
               alt="LVP Pokemon card vending machine"
               fill
               sizes="(min-width: 768px) 25vw, 50vw"
-              className="object-cover object-[center_35%]"
+              className="object-cover object-[center_35%] transition-transform group-hover:scale-105"
             />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_10px_28px_rgba(0,31,63,0.08)]">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#001F3F]/70 via-transparent to-transparent" />
+            <span className="absolute bottom-2 left-2 right-2 text-xs font-bold uppercase tracking-[0.08em] text-white md:text-sm">
+              Pokémon Vending
+            </span>
+          </Link>
+          <Link
+            href="/smart-vending"
+            className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_10px_28px_rgba(0,31,63,0.08)]"
+          >
             <Image
               src="/LVPVendingSmartDoubleDemo1.jpg"
               alt="LVP Smart Double vending machine"
               fill
               sizes="(min-width: 768px) 25vw, 50vw"
-              className="object-cover"
+              className="object-cover transition-transform group-hover:scale-105"
             />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_10px_28px_rgba(0,31,63,0.08)]">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#001F3F]/70 via-transparent to-transparent" />
+            <span className="absolute bottom-2 left-2 right-2 text-xs font-bold uppercase tracking-[0.08em] text-white md:text-sm">
+              Smart Vending
+            </span>
+          </Link>
+          <Link
+            href="/pokemon"
+            className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_10px_28px_rgba(0,31,63,0.08)]"
+          >
             <Image
               src="/LVPVendingPokemonMachine2.png"
               alt="LVP Pokemon card vending machine display"
               fill
               sizes="(min-width: 768px) 25vw, 50vw"
-              className="object-cover"
+              className="object-cover transition-transform group-hover:scale-105"
             />
-          </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#001F3F]/70 via-transparent to-transparent" />
+            <span className="absolute bottom-2 left-2 right-2 text-xs font-bold uppercase tracking-[0.08em] text-white md:text-sm">
+              Pokémon Vending
+            </span>
+          </Link>
         </div>
       </section>
 
