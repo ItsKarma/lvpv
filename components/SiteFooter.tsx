@@ -33,6 +33,9 @@ export default function SiteFooter({ tagline }: SiteFooterProps) {
           <Link href="/support" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
             Support
           </Link>
+          <Link href="/pokemon/authenticity" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
+            Pokémon Pack Policy
+          </Link>
           <Link href="/brand-affiliation-disclaimer" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
             Brand Affiliation Disclaimer
           </Link>
