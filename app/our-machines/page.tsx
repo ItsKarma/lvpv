@@ -38,7 +38,7 @@ export default function OurMachinesPage() {
             <div className="relative aspect-[4/3] w-full bg-[#001F3F]">
               <Image
                 src="/LVPVendingSmartSlimDemo1.jpg"
-                alt="LVP Smart Slim AI vending machine"
+                alt="LVP Smart Slim vending machine"
                 fill
                 priority
                 sizes="(min-width: 768px) 50vw, 100vw"

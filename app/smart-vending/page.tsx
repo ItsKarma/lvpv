@@ -60,7 +60,7 @@ const faqItems = [
   },
   {
     question: 'What if the machine misidentifies an item?',
-    answer: 'The AI vision system recognizes items with 99% accuracy in about 60 seconds, and every transaction is logged with video for review. Any discrepancy can be corrected quickly through our support team.',
+    answer: 'The image recognition system recognizes items with 99% accuracy in about 60 seconds, and every transaction is logged with video for review. Any discrepancy can be corrected quickly through our support team.',
   },
   {
     question: 'What can the machine stock?',
@@ -90,7 +90,7 @@ export default function SmartVendingPage() {
         <div className="relative aspect-[4/3] w-full md:aspect-[16/6]">
           <Image
             src="/LVPVendingSmartSlimDemo1.jpg"
-            alt="LVP Smart Slim AI vending machine"
+            alt="LVP Smart Slim vending machine"
             fill
             priority
             className="object-cover object-center"
@@ -101,7 +101,7 @@ export default function SmartVendingPage() {
             <div className="w-full px-4 py-6 md:px-8 md:py-10">
               <div className="mx-auto max-w-6xl">
                 <div className="inline-flex rounded-sm bg-white px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[#001F3F] md:text-xs">
-                  AI Vision Powered Cooler
+                  Smart Image Recognition Powered Cooler
                 </div>
                 <h2 className="mt-4 max-w-xl text-2xl font-black text-white md:text-4xl">
                   A sleek refrigerated cooler that fits offices, gyms, dorms, and lounge areas.
@@ -172,7 +172,7 @@ export default function SmartVendingPage() {
             <div className="bg-white/10 p-6 rounded-2xl border border-white/20">
               <Image
                 src="/LVPVendingSmartDoubleDemo1.jpg"
-                alt="LVP Smart Double AI vending machine"
+                alt="LVP Smart Double vending machine"
                 width={420}
                 height={420}
                 className="h-auto w-full max-w-[260px] rounded-lg sm:max-w-[300px]"
@@ -299,7 +299,7 @@ export default function SmartVendingPage() {
         </div>
       </Section>
 
-      <SiteFooter tagline="AI-Powered Food & Drink Vending" />
+      <SiteFooter tagline="Smart Food & Drink Vending" />
     </>
   );
 }
