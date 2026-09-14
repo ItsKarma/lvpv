@@ -9,16 +9,16 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "LVP Vending - Pokémon Card & AI Smart Vending Machines",
-  description: "Earn passive income with Pokémon booster pack vending and AI-powered cashless smart vending machines. Zero hassle, 10% of every sale.",
+  title: "LVP Vending - Smart Vending Services",
+  description: "Bring a modern cashless vending experience to your workplace as a free amenity. Zero hassle, locally serviced across the Lehigh Valley.",
   icons: {
     icon: "/lvp-favicon.svg",
     shortcut: "/lvp-favicon.svg",
     apple: "/lvp-favicon.svg",
   },
   openGraph: {
-    title: "LVP Vending - Pokémon Card & AI Smart Vending Machines",
-    description: "Earn passive income with Pokémon booster pack vending and AI-powered cashless smart vending machines.",
+    title: "LVP Vending - Smart Vending Services",
+    description: "Bring a modern cashless vending experience to your workplace as a free amenity. Zero hassle, locally serviced across the Lehigh Valley.",
   },
 };
 
