@@ -4,6 +4,9 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Support | LVP Vending',
   description: 'General support page for LVP Vending customers and location partners.',
+  alternates: {
+    canonical: '/support',
+  },
 };
 
 const recipient = 'support@lvpvending.com';

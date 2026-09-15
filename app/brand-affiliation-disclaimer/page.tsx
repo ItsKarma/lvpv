@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Brand & Trademark Disclaimer | LVP Vending',
   description:
     'Brand and trademark disclaimer for LVP Vending regarding third-party trademarks, brand names, and product references.',
+  alternates: {
+    canonical: '/brand-affiliation-disclaimer',
+  },
 };
 
 export default function BrandAffiliationDisclaimerPage() {

@@ -22,6 +22,10 @@ export async function generateMetadata({
   return {
     title: `Vending Feedback | ${locationName} | LVP Vending`,
     description: `Tell LVP Vending what items you would like to see at ${locationName}.`,
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 
