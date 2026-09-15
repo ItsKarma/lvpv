@@ -9,26 +9,27 @@ import ContactForm from '@/components/ContactForm';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 
-const steps = [
+const howItWorksCards = [
   {
-    icon: <CreditCard size={24} />,
-    title: 'Tap or Swipe',
-    description: 'Customers tap a card, phone, or wallet at the reader. No app or account required.',
+    icon: <CreditCard size={22} />,
+    title: 'Tap card or phone',
+    description: 'Tap any credit card, debit card, or phone on the reader. The door unlocks instantly.',
+    image: '/LVPVendingSmart1Tap.gif',
+    alt: 'Customer tapping a phone to open an LVP smart vending cooler',
   },
   {
-    icon: <DoorOpen size={24} />,
-    title: 'Door Unlocks',
-    description: 'The refrigerated door unlocks instantly, just like opening your own fridge.',
+    icon: <ShoppingBag size={22} />,
+    title: 'Grab your items',
+    description: 'Take whatever food or drinks you want. Image recognition tracks each item in real time.',
+    image: '/LVPVendingSmart1Grab.gif',
+    alt: 'Customer grabbing a drink from an LVP smart vending cooler',
   },
   {
-    icon: <ShoppingBag size={24} />,
-    title: 'Grab & Go',
-    description: 'Customers take whatever food or drinks they want and simply close the door.',
-  },
-  {
-    icon: <ScanEye size={24} />,
-    title: 'Checkout Happens Automatically',
-    description: 'Onboard cameras detect exactly what was taken, and the card is charged automatically, no scanning required.',
+    icon: <DoorOpen size={22} />,
+    title: 'Close door & go',
+    description: 'Close the door and walk away. Your card is automatically charged only for what you took.',
+    image: '/LVPVendingSmart1Go.gif',
+    alt: 'Customer closing an LVP smart vending cooler after selecting items',
   },
 ];
 
@@ -96,12 +97,13 @@ export default function SmartVendingPage() {
             className="object-cover object-center"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#001F3F]/80 via-[#001F3F]/35 to-[#001F3F]/10" />
+          <div className="absolute inset-0 bg-gradient-to-l from-[#001F3F]/65 via-[#001F3F]/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#001F3F]/55 via-transparent to-transparent" />
           <div className="absolute inset-0 flex items-end md:items-center">
             <div className="w-full px-4 py-6 md:px-8 md:py-10">
               <div className="mx-auto max-w-6xl">
                 <div className="inline-flex rounded-sm bg-white px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[#001F3F] md:text-xs">
-                  Smart Image Recognition Powered Cooler
+                  Smart Coolers
                 </div>
                 <h2 className="mt-4 max-w-xl text-2xl font-black text-white md:text-4xl">
                   A sleek refrigerated cooler that fits offices, gyms, dorms, and lounge areas.
@@ -144,26 +146,53 @@ export default function SmartVendingPage() {
         </div>
       </Section>
 
-      {/* How It Works */}
-      <Section id="how-it-works" title="How It Works" className="bg-[#f8fafc]">
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {steps.map((step, index) => (
+      <section id="how-it-works" className="scroll-mt-20 bg-white px-4 py-16 md:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-[#8F1024]">
+              How It Works
+            </p>
+            <h2 className="text-4xl font-black leading-tight text-[#001F3F] md:text-6xl">
+              Simply{' '}
+              <span className="bg-gradient-to-r from-[#0F6FFF] to-[#8F1024] bg-clip-text text-transparent">
+                Tap, Grab & Go
+              </span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#001F3F]/75">
+              No apps. No PINs. No buttons to press. Just a smooth checkout powered by image recognition.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {howItWorksCards.map((step) => (
             <div
               key={step.title}
-              className="rounded-2xl border border-[#001F3F]/15 bg-white p-6 text-center shadow-[0_10px_28px_rgba(0,31,63,0.05)]"
+              className="overflow-hidden rounded-2xl border border-[#001F3F]/15 bg-white shadow-[0_16px_36px_rgba(0,31,63,0.08)]"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#8F1024] rounded-full text-white mb-4 mx-auto">
-                {step.icon}
+              <div className="relative aspect-[16/9] w-full bg-[#f8fafc]">
+                <Image
+                  src={step.image}
+                  alt={step.alt}
+                  fill
+                  unoptimized
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  className="object-cover"
+                />
               </div>
-              <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#8F1024] mb-2">
-                Step {index + 1}
-              </p>
-              <h3 className="font-black text-xl mb-3 text-[#001F3F]">{step.title}</h3>
-              <p className="text-[#001F3F]">{step.description}</p>
+              <div className="p-6 md:p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0F6FFF]/10 text-[#0F6FFF]">
+                    {step.icon}
+                  </span>
+                  <h3 className="text-2xl font-black text-[#001F3F]">{step.title}</h3>
+                </div>
+                <p className="text-lg leading-relaxed text-[#001F3F]/75">{step.description}</p>
+              </div>
             </div>
           ))}
         </div>
-      </Section>
+        </div>
+      </section>
 
       {/* Why Smart Vending */}
       <Section id="why" title="Why Smart Vending?" dark>
