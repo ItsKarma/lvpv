@@ -8,6 +8,7 @@ const staticRoutes = [
   '/about',
   '/brand-affiliation-disclaimer',
   '/our-machines',
+  '/catalog',
   '/pokemon',
   '/pokemon/authenticity',
   '/risk-free',

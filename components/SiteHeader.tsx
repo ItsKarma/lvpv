@@ -18,6 +18,7 @@ interface SiteHeaderProps {
 
 const defaultNavItems: NavItem[] = [
   { label: 'Our Machines', href: '/our-machines' },
+  { label: 'Catalog', href: '/catalog' },
   { label: 'About Us', href: '/about' },
   { label: 'Service Area', href: '/service-area' },
   { label: 'Contact Us', href: '/#contact' },
