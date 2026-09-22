@@ -39,6 +39,9 @@ export default function SiteFooter({ tagline }: SiteFooterProps) {
           <Link href="/brand-affiliation-disclaimer" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
             Brand Affiliation Disclaimer
           </Link>
+          <Link href="/privacy-policy" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
+            Privacy Policy
+          </Link>
         </div>
         <p className="text-white text-xs">
           © {new Date().getFullYear()} LVP Vending. All rights reserved.

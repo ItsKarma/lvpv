@@ -11,6 +11,7 @@ const staticRoutes = [
   '/catalog',
   '/pokemon',
   '/pokemon/authenticity',
+  '/privacy-policy',
   '/risk-free',
   '/service-area',
   '/smart-vending',
