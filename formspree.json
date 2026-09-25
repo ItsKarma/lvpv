@@ -1,0 +1,29 @@
+{
+  "forms": {
+    "smartVendingLead": {
+      "name": "Smart Vending Lead (Google Ads)",
+      "fields": {
+        "daily_employees": { "type": "text", "required": true },
+        "name": { "type": "text", "required": true },
+        "business": { "type": "text", "required": true },
+        "email": { "type": "email", "required": true },
+        "phone": { "type": "text", "required": false },
+        "source": { "type": "text", "required": false },
+        "gclid": { "type": "text", "required": false },
+        "gbraid": { "type": "text", "required": false },
+        "wbraid": { "type": "text", "required": false },
+        "utm_source": { "type": "text", "required": false },
+        "utm_medium": { "type": "text", "required": false },
+        "utm_campaign": { "type": "text", "required": false },
+        "utm_term": { "type": "text", "required": false },
+        "utm_content": { "type": "text", "required": false }
+      },
+      "actions": [
+        {
+          "type": "email",
+          "to": "matt@lvpvending.com"
+        }
+      ]
+    }
+  }
+}
