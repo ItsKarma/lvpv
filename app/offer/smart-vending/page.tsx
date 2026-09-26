@@ -88,7 +88,7 @@ const faqs = [
   {
     question: 'How long does setup take?',
     answer:
-      'Once we confirm a fit, installation is typically scheduled within a couple of weeks and takes under an hour on site.',
+      'Once we confirm a fit, installation is typically scheduled within a week and takes under an hour on site.',
   },
 ];
 
