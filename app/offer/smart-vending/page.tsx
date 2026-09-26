@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import {
   BadgeDollarSign,
   CreditCard,
@@ -238,13 +237,6 @@ export default function SmartVendingOfferPage() {
 
           <SmartVendingLeadForm />
 
-          <p className="mt-6 text-center text-sm leading-6 text-[#001F3F]/70">
-            We only use your contact information to follow up about vending at your location. See our{' '}
-            <Link href="/privacy-policy" className="underline decoration-[#8F1024] decoration-2 underline-offset-4">
-              privacy policy
-            </Link>
-            .
-          </p>
         </div>
       </section>
 
@@ -253,12 +245,6 @@ export default function SmartVendingOfferPage() {
           <Logo dark />
         </div>
         <p className="mt-4 text-white/85">Automated Retail. Zero Hassle.</p>
-        <a
-          href="mailto:info@lvpvending.com"
-          className="mt-3 inline-block text-sm text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4"
-        >
-          info@lvpvending.com
-        </a>
         <p className="mt-6 text-xs text-white/70">
           © {new Date().getFullYear()} LVP Vending. All rights reserved.
         </p>

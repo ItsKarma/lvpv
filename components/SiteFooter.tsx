@@ -27,9 +27,6 @@ export default function SiteFooter({ tagline }: SiteFooterProps) {
           <Link href="/service-area" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
             Service Area
           </Link>
-          <a href="mailto:info@lvpvending.com" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
-            info@lvpvending.com
-          </a>
           <Link href="/support" className="text-white underline decoration-[#ff5f70] decoration-2 underline-offset-4 hover:text-white">
             Support
           </Link>

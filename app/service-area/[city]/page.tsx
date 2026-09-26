@@ -71,7 +71,7 @@ export default async function CityServiceAreaPage({ params }: CityPageProps) {
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
-                href="#contact"
+                href="/#contact"
                 className="inline-flex w-full items-center justify-center rounded-lg bg-[#8F1024] px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#740d1d] sm:w-auto"
               >
                 Request a Free Machine
@@ -158,7 +158,6 @@ export default async function CityServiceAreaPage({ params }: CityPageProps) {
               your team, customers, tenants, or visitors.
             </p>
             <ContactForm
-              subject={`Smart vending inquiry in ${city.name}, PA`}
               heading={`Start a conversation about bringing LVP smart vending to your ${city.name} location.`}
               buttonLabel="Request a Free Machine"
             />

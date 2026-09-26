@@ -271,7 +271,6 @@ export default function PokemonPage() {
           </div>
 
           <ContactForm
-            subject="Inquiry About LVP Pokémon Vending"
             heading="Start a conversation about bringing Pokémon card vending to your location."
           />
         </div>

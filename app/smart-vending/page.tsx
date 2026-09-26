@@ -322,7 +322,6 @@ export default function SmartVendingPage() {
           </div>
 
           <ContactForm
-            subject="Inquiry About LVP Smart Vending"
             heading="Start a conversation about bringing smart vending to your location."
           />
         </div>

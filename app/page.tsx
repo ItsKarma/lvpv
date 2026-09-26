@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
-import ContactForm from '@/components/ContactForm';
+import SmartVendingLeadForm from '@/components/SmartVendingLeadForm';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 
@@ -151,17 +151,7 @@ export default function Home() {
             Not sure which machine fits your space? Let's chat about what's possible for your location.
           </p>
 
-          <div className="text-center mb-8">
-            <p className="text-[#001F3F] mb-2">Email</p>
-            <a
-              href="mailto:info@lvpvending.com"
-              className="text-2xl font-bold text-[#001F3F] underline decoration-[#8F1024] decoration-2 underline-offset-4 hover:text-[#001F3F]"
-            >
-              info@lvpvending.com
-            </a>
-          </div>
-
-          <ContactForm buttonLabel="Request a Free Machine" />
+          <SmartVendingLeadForm source="homepage" />
         </div>
       </Section>
 

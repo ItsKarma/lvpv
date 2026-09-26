@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { CreditCard, ShoppingBag, DoorOpen, Sparkles } from 'lucide-react';
 import Logo from '@/components/Logo';
 import SiteHeader from '@/components/SiteHeader';
@@ -215,6 +216,22 @@ export default function ProductCatalogPage() {
       </main>
 
       <div className="no-print">
+        <section className="border-t border-[#001F3F]/10 bg-[#f8fafc] px-4 py-14 text-center">
+          <div className="mx-auto max-w-2xl">
+            <h2 className="text-3xl font-black text-[#001F3F] md:text-4xl">
+              Want a smart cooler at your location?
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-[#001F3F]/80">
+              Tell us what your team or customers need, and we will help you find the right fit.
+            </p>
+            <Link
+              href="/#contact"
+              className="mt-7 inline-flex items-center justify-center rounded-lg bg-[#8F1024] px-7 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#740d1d]"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </section>
         <SiteFooter tagline="A modern, cashless vending experience as a free amenity for your location." />
       </div>
     </>
