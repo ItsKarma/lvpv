@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import GoogleAdsTag from '@/components/GoogleAdsTag';
 
 export const metadata: Metadata = {
   title: 'Free Smart Vending for Your Break Room | LVP Vending',
@@ -15,10 +14,5 @@ export const metadata: Metadata = {
 };
 
 export default function SmartVendingOfferLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      <GoogleAdsTag />
-      {children}
-    </>
-  );
+  return children;
 }

@@ -3,10 +3,7 @@
 import Script from 'next/script';
 import { GOOGLE_ADS_ID } from '@/lib/googleAds';
 
-/**
- * Loads gtag.js for the Google Ads account and enables enhanced conversions.
- * Only rendered on paid landing pages.
- */
+/** Loads the site-wide Google Ads tag when an Ads ID is configured. */
 export default function GoogleAdsTag() {
   if (!GOOGLE_ADS_ID) return null;
 
