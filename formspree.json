@@ -29,7 +29,7 @@
       "name": "Support Request",
       "fields": {
         "name": { "type": "text", "required": true },
-        "email": { "type": "email", "required": true },
+        "email": { "type": "email", "required": false },
         "phone": { "type": "text", "required": false },
         "location": { "type": "text", "required": false },
         "message": { "type": "text", "required": true }
